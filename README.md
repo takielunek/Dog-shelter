@@ -1,8 +1,25 @@
-# gym-typescript
+## Informacje ogólne
+Strona internetowa stworzona w celu indywidualnej praktyki.
 
-Build a Complete Typescript React Fitness Application for Beginners
+Link do strony: 
 
-Video: https://www.youtube.com/watch?v=I2NNxr3WPDo
+## Użyte technologie
+* HTML
+* CSS
+* TypeScript
+* Tailwind
+* React
+* Vite
+* React Hook Form
+* Heroicons
+* Embed Google Maps
+* Framer Motion
+* Google Fonts
+* Tinyfy
+* Unsplash
+* Canva
+* Vercel
 
-For all related questions and discussions about this project, check out the discord:
-https://discord.gg/2FfPeEk2mX
+## Kontakt
+Programowała: [Karolina Jesionek](mailto:karolina.anna.jesionek@gmail.com) 
+
