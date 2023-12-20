@@ -1,0 +1,11 @@
+.flexClass {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .flexClass {
+    display: flex;
+    flex-direction: row;
+  }
+}

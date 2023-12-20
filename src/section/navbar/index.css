@@ -1,0 +1,15 @@
+.mobileHover {
+  color: white;
+}
+
+.mobileHover:hover {
+  color: black;
+}
+
+.desktopHover {
+  color: black;
+}
+
+.desktopHover:hover {
+  color: orange;
+}

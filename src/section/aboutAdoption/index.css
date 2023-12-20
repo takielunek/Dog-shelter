@@ -1,0 +1,14 @@
+.chevron {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1rem;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .chevron {
+    margin-right: 0.5rem;
+    height: 2rem;
+    width: 1.5rem;
+  }
+}
