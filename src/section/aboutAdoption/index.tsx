@@ -94,8 +94,8 @@ const AboutAdoption = ({ setSelectedPage }: Props) => {
               Podpisz umowę i odbierz przyjaciela :)
             </motion.div>
           </div>
-          <div className="mx-auto mt-10 md:mt-0">
-            <img src={img21} alt="Dog" />
+          <div className="mx-auto mt-10 md:mt-0 ">
+            <img src={img21} alt="Dog" className="h-[280px] xs:h-[380px]" />
           </div>
         </div>
       </motion.div>

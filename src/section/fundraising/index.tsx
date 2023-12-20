@@ -25,7 +25,7 @@ const Fundraising = ({ setSelectedPage }: Props) => {
         </p>
 
         <motion.div
-          className="flexClass mx-auto w-3/4 flex-wrap justify-center"
+          className="flexClass mx-auto w-11/12 xs:w-3/4 flex-wrap justify-center"
           initial={{ opacity: 0, y: 700 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}

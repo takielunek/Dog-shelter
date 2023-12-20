@@ -31,7 +31,7 @@ const Adoption = ({ setSelectedPage }: Props) => {
         <p className="fundraisingText mx-auto w-3/4 py-4 text-center font-quicksand">
           Wybierz zwierzaka i umów się z nami na spotkanie !
         </p>
-        <div className="flexClass mx-auto w-3/4 flex-wrap justify-center">
+        <div className="flexClass mx-auto w-11/12 flex-wrap justify-center xs:w-3/4">
           <div className="borderRed borderStyle m-4 border-4">
             <img src={img1} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
             <div className="fundraisingText flex flex-col font-quicksand">
