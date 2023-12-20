@@ -1,7 +1,7 @@
 ## Informacje ogólne
 Strona internetowa stworzona w celu indywidualnej praktyki.
 
-Link do strony: 
+Link do strony: https://dogs-shelter-inky.vercel.app/
 
 ## Użyte technologie
 * HTML
