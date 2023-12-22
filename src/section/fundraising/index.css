@@ -4,14 +4,6 @@
   border: 4px solid;
 }
 
-.borderOrange {
-  border: 4px solid orange;
-}
-
-.borderIndigo {
-  border: 4px solid #918ef4;
-}
-
 @media (min-width: 640px) {
   .borderStyle {
     padding: 40px;

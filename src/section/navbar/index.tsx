@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import "./index.css";
 
+
 type Props = {
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
@@ -18,7 +19,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
   return (
     <nav>
-      <div className="fixed w-full bg-white font-quicksand z-50">
+      <div className="fixed z-50 w-full bg-white font-quicksand">
         <div
           className={`${flexBetween} top-0 z-30 mx-auto w-full py-4 xxl:w-3/4`}
         >

@@ -1,4 +1,4 @@
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage, AdoptionType } from "@/shared/types";
 import img1 from "@/assets/dogs/img_1.jpg";
 import img3 from "@/assets/dogs/img_3.jpg";
 import img4 from "@/assets/dogs/img_4.jpg";
@@ -14,6 +14,81 @@ import img17 from "@/assets/dogs/img_17.jpg";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import "./index.css";
+
+const adoption: Array<AdoptionType> = [
+  {
+    image: img1,
+    name: "Abbie",
+    gender: "suczka",
+    age: "12 miesięcy",
+  },
+  {
+    image: img3,
+    name: "Tobi",
+    gender: "pies",
+    age: "15 miesięcy",
+  },
+  {
+    image: img4,
+    name: "Gang",
+    gender: "pies",
+    age: "9 miesięcy",
+  },
+  {
+    image: img7,
+    name: "Rose",
+    gender: "suczka",
+    age: "10 miesięcy",
+  },
+  {
+    image: img9,
+    name: "Todie",
+    gender: "pies",
+    age: "25 miesięcy",
+  },
+  {
+    image: img6,
+    name: "Rubi",
+    gender: "suczka",
+    age: "17 miesięcy",
+  },
+  {
+    image: img10,
+    name: "Aura",
+    gender: "suczka",
+    age: "30 miesięcy",
+  },
+  {
+    image: img12,
+    name: "Rose",
+    gender: "suczka",
+    age: "10 miesięcy",
+  },
+  {
+    image: img13,
+    name: "Black",
+    gender: "pies",
+    age: "25 miesięcy",
+  },
+  {
+    image: img14,
+    name: "Buni",
+    gender: "suczka",
+    age: "17 miesięcy",
+  },
+  {
+    image: img16,
+    name: "Aura",
+    gender: "suczka",
+    age: "30 miesięcy",
+  },
+  {
+    image: img17,
+    name: "Kala",
+    gender: "suczka",
+    age: "10 miesięcy",
+  },
+];
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -32,285 +107,35 @@ const Adoption = ({ setSelectedPage }: Props) => {
           Wybierz zwierzaka i umów się z nami na spotkanie !
         </p>
         <div className="flexClass mx-auto w-11/12 flex-wrap justify-center xs:w-3/4">
-          <div className="borderRed borderStyle m-4 border-4">
-            <img src={img1} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Abbie</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>12 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderGreen borderStyle m-4 border-4">
-            <img src={img3} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Tobi</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>pies</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>15 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
+          {adoption.map((adoption: AdoptionType) => (
+            <div className="borderStyle m-4 border-4 odd:border-peach even:border-green-1">
+              <img
+                src={adoption.image}
+                alt="Dog"
+                className="xl:w-[350px] xxl:w-[450px]"
+              />
+              <div className="fundraisingText flex flex-col font-quicksand">
+                <div className="flex gap-4">
+                  <p>imię:</p>
+                  <p>{adoption.name}</p>
+                </div>
+                <div className="flex gap-4">
+                  <p>płeć:</p>
+                  <p>{adoption.gender}</p>
+                </div>
+                <div className="flex gap-4">
+                  <p>wiek:</p>
+                  <p>{adoption.age}</p>
+                </div>
+                <div className="mt-6 flex cursor-pointer justify-end text-green-1">
+                  <p className="text-[12px] underline sm:text-[16px]">
+                    Więcej informacji
+                  </p>
+                  <ArrowRightCircleIcon className="circleArrow" />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="borderIndigo borderStyle m-4 border-4">
-            <img src={img4} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Gang</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>pies</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>9 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderPeach borderStyle m-4 border-4">
-            <img src={img7} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Rose</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>10 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderRed borderStyle m-4 border-4">
-            <img src={img9} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Todie</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>pies</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>25 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderGreen borderStyle m-4 border-4">
-            <img src={img6} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Rubi</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>17 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-
-          <div className="borderIndigo borderStyle m-4 border-4">
-            <img src={img10} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Aura</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>30 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderPeach borderStyle m-4 border-4">
-            <img src={img12} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Rose</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>10 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderRed borderStyle m-4 border-4">
-            <img src={img13} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Black</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>pies</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>25 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderGreen borderStyle m-4 border-4">
-            <img src={img14} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Buni</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>17 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-
-          <div className="borderIndigo borderStyle m-4 border-4">
-            <img src={img16} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Aura</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>30 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
-          <div className="borderPeach borderStyle m-4 border-4">
-            <img src={img17} alt="Dog" className="xl:w-[350px] xxl:w-[450px]" />
-            <div className="fundraisingText flex flex-col font-quicksand">
-              <div className="flex gap-4">
-                <p>imię:</p>
-                <p>Kala</p>
-              </div>
-              <div className="flex gap-4">
-                <p>płeć:</p>
-                <p>suczka</p>
-              </div>
-              <div className="flex gap-4">
-                <p>wiek:</p>
-                <p>10 miesięcy</p>
-              </div>
-              <div className="mt-6 flex cursor-pointer justify-end text-green-1">
-                <p className="text-[12px] underline sm:text-[16px]">
-                  Więcej informacji
-                </p>
-                <ArrowRightCircleIcon className="circleArrow" />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </motion.div>
     </section>
