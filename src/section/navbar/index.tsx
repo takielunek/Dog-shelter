@@ -42,6 +42,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                         page="Zbiórki"
                         selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage}
+             
                       />
                     </div>
                     <div className="desktopHover">
@@ -56,6 +57,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                         page="Adoptuj"
                         selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage}
+                        
                       />
                     </div>
                     <div className="desktopHover">
@@ -85,10 +87,10 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className=" fixed top-0 bottom-0 z-40 w-full bg-orange font-quicksand">
+        <div className=" fixed top-0 bottom-0 z-40 w-full bg-green-1 font-quicksand">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-white" />
+              <XMarkIcon className="h-6 w-6 text-white mt-20" />
             </button>
           </div>
 
