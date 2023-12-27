@@ -96,7 +96,7 @@ type Props = {
 
 const Adoption = ({ setSelectedPage }: Props) => {
   return (
-    <section id="adoption" className="bg-white py-6 xs:py-10">
+    <section id="adoptuj" className="bg-white py-6 xs:py-10">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Adoption)}
       >

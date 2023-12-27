@@ -8,7 +8,7 @@ type Props = { setSelectedPage: (value: SelectedPage) => void };
 
 const Contact = ({ setSelectedPage }: Props) => {
   return (
-    <section id="contact" className="bg-indigo py-10">
+    <section id="kontakt" className="bg-indigo py-10">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contact)}>
         <div>
           <p className="pb-10 text-center font-titan text-2xl text-peach drop-shadow-xl xxs:text-4xl w-11/12 mx-auto">
