@@ -7,6 +7,7 @@ Link do strony: https://dogs-shelter-inky.vercel.app/
 * HTML
 * CSS
 * TypeScript
+* JavaScript
 * Tailwind
 * React
 * Vite
