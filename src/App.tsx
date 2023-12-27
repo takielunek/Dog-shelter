@@ -14,7 +14,7 @@ function App() {
   );
 
   return (
-    <div>
+    <>
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Home setSelectedPage={setSelectedPage} />
       <Fundraising setSelectedPage={setSelectedPage} />
@@ -22,7 +22,7 @@ function App() {
       <Adoption setSelectedPage={setSelectedPage} />
       <Contact setSelectedPage={setSelectedPage} />
       <Footer />
-    </div>
+    </>
   );
 }
 

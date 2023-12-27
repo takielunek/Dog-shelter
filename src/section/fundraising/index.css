@@ -10,16 +10,14 @@
   }
 }
 
-.fundraisingText,
-.text {
+.fundraisingText {
   display: flex;
   margin-top: 0.5rem;
   justify-content: center;
 }
 
 @media (min-width: 640px) {
-  .fundraisingText,
-  .text {
+  .fundraisingText {
     font-size: 1.5rem;
     line-height: 2rem;
   }

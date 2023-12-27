@@ -17,5 +17,4 @@ export interface AdoptionType {
   name: string;
   gender: string;
   age: string;
-
 }

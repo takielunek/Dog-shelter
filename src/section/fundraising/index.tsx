@@ -38,7 +38,7 @@ const Fundraising = ({ setSelectedPage }: Props) => {
   return (
     <section id="zbiórki" className="bg-white py-6 xs:py-10">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Fundraising)}
+        // onViewportEnter={() => setSelectedPage(SelectedPage.Fundraising)}
       >
         <p className=" text-center font-titan text-2xl text-green-1 xxs:text-4xl">
           Zbiórki pieniędzy:
