@@ -34,13 +34,15 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+
 const Fundraising = ({ setSelectedPage }: Props) => {
+
   return (
     <section id="zbiórki" className="bg-white py-6 xs:py-10">
       <motion.div
-        // onViewportEnter={() => setSelectedPage(SelectedPage.Fundraising)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Fundraising)}
       >
-        <p className=" text-center font-titan text-2xl text-green-1 xxs:text-4xl">
+        <p className="text-center font-titan text-2xl text-green-1 xxs:text-4xl">
           Zbiórki pieniędzy:
         </p>
         <p className="fundraisingText py-4 font-quicksand">
@@ -54,7 +56,7 @@ const Fundraising = ({ setSelectedPage }: Props) => {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           {fundraising.map((item: FundraisingType) => (
-            <div className="even:border-indigo odd:border-orange borderStyle m-4 border-4">
+            <div className="borderStyle m-4 border-4 odd:border-orange even:border-indigo">
               <img
                 src={item.image}
                 alt="Dog"

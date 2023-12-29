@@ -1,17 +1,15 @@
 import Navbar from "@/logInSection/navbar";
-import LogInForm from "@/logInSection/logIn";
 import Footer from "@/section/footer";
+import Register from "./logInSection/register";
 
-
-function LogIn() {
- 
+function RegisterPage() {
   return (
     <>
       <Navbar />
-      <LogInForm />
+      <Register />
       <Footer />
     </>
   );
 }
 
-export default LogIn;
+export default RegisterPage;
