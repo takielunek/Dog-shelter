@@ -10,7 +10,7 @@ function AllRoutes() {
       <Routes>
         <Route path="/app" element={<App />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login/register" element={<RegisterPage />} />
       </Routes>
     </>
   );

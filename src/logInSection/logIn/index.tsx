@@ -4,7 +4,7 @@ import img18 from "@/assets/dogs/img_18.jpg";
 const LogInForm = () => {
   const flex = "flex flex-col lg:flex-row";
   const input =
-    "border-gray border-b-2 outline-none focus:border-green-2 bg-transparent text-sm";
+    "border-gray border-b-2 outline-none focus:border-green-2 bg-transparent text-sm xs:text-base sm:text-xl";
   const text = "text-xs xs:text-base sm:text-xl";
 
   return (
@@ -18,7 +18,7 @@ const LogInForm = () => {
             <div className="flex justify-around">
               <div className="mb-6 flex flex-col">
                 <label htmlFor="" className={`${text}`}>
-                  Email
+                  email
                 </label>
                 <input type="email" className={`${input}`} />
               </div>
@@ -26,7 +26,7 @@ const LogInForm = () => {
             <div className="flex justify-around">
               <div className="mb-6 flex flex-col">
                 <label htmlFor="" className={`${text}`}>
-                  Hasło
+                  hasło
                 </label>
                 <input type="password" className={`${input}`} />
               </div>
@@ -35,11 +35,11 @@ const LogInForm = () => {
               <div className="flex justify-around">
                 <div className={`${text}`}>
                   <input type="checkbox" className="mr-4" />
-                  <label htmlFor="">Zapamiętaj mnie</label>
+                  <label htmlFor="">zapamiętaj mnie</label>
                 </div>
               </div>
             </div>
-            <div className="mt-8 mb-10 flex justify-around sm:mt-12 sm:mb-18">
+            <div className="sm:mb-18 mt-8 mb-10 flex justify-around sm:mt-12">
               <button
                 type="submit"
                 className="rounded-xl bg-orange py-2 px-8 text-white duration-500 hover:bg-green-1"
@@ -63,7 +63,7 @@ const LogInForm = () => {
             </div>
           </form>
         </div>
-        <div className="mx-auto w-11/12 lg:w-1/2">
+        <div className="mx-auto flex w-11/12 lg:w-1/2">
           <img src={img18} alt="Dogs" className="rounded-xl" />
         </div>
       </div>

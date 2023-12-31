@@ -1,11 +1,11 @@
-import Navbar from "@/logInSection/navbar";
+import RegisterNavbar from "@/logInSection/registerNavbar";
 import Footer from "@/section/footer";
 import Register from "./logInSection/register";
 
 function RegisterPage() {
   return (
     <>
-      <Navbar />
+      <RegisterNavbar />
       <Register />
       <Footer />
     </>
